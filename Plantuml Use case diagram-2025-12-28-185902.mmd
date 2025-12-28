@@ -1,0 +1,16 @@
+flowchart LR
+    Student[Student]
+    Admin[Admin]
+    RegisterLogin["Register / Login"]
+    ScanQR["Scan QR Code"]
+    EarnPoints["Earn Eco Points"]
+    ViewScoreboard["View Eco Scoreboard"]
+    ManageQR["Manage QR Codes"]
+
+    Student --> RegisterLogin
+    Student --> ScanQR
+    Student --> EarnPoints
+    Student --> ViewScoreboard
+    Admin --> ManageQR
+    ScanQR --> EarnPoints
+    EarnPoints --> ViewScoreboard
